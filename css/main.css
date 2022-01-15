@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./../fonts/fraunces-v10-latin-regular.woff2") format("woff2"), url("./../fonts/fraunces-v10-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("./../fonts/fraunces-v10-latin-900.woff2") format("woff2"), url("./../fonts/fraunces-v10-latin-900.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./../fonts/barlow-v5-latin-regular.woff2") format("woff2"), url("./../fonts/barlow-v5-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./../fonts/barlow-v5-latin-700.woff2") format("woff2"), url("./../fonts/barlow-v5-latin-700.woff") format("woff");
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', 'Fraunces', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.header__logo {
+  width: 236px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__item + .header__item {
+  margin-left: 33px;
+}
+
+.nav__link {
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #333D4B;
+}
+
+.hero__container {
+  max-width: 1280px;
+  margin-bottom: 166px;
+  padding-top: 137px;
+  padding-bottom: 137px;
+  padding-left: 85px;
+  border-radius: 10px;
+  background-image: url(./../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container .hero__wrapper .hero__heading {
+  margin-bottom: 24px;
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.hero__container .hero__wrapper .hero__text {
+  max-width: 445px;
+  font-family: Barlow;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+.commitment__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 166px;
+}
+
+.commitment__container .commitment_wrapper .commitment__image {
+  width: 445px;
+  height: 520px;
+}
+
+.commitment__container .commitment_wrapper .commitment__heading {
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+  margin-bottom: 32px;
+}
+
+.commitment__container .commitment_wrapper .commitment__text {
+  max-width: 540px;
+  font-family: Barlow;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=main.css.map */
